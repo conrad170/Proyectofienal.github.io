@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 45px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background-color: rgb(48, 48, 165);
+    transition: 1s;
+}
+.checkbtn{
+    font-size: 35px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin: 5px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(/page/BB8DA835-5F83-45EC-8678-9E2365C80A6D.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(50vh - 80px);
+    background-attachment: fixed;
+}
+@media (max-width: 952px){
+    .checkbtn{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(20, 20, 27);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 1s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(72, 72, 151);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.card{
+    width: 100%;
+    margin: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0,0.2);
+    cursor: default;
+    transition: all 399ms ease;
+    position: relative;
+    top: 455px;
+    left: 360px;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.4);
+    transform: translateY(3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 400px;
+}
+.card .contenido h3{
+    font-weight: 600;
+}
+.card .contenido p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.noticias{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    top: 450px;
+    left: 887px;
+}
+
+
+
